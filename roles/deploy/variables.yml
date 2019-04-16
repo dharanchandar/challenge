@@ -1,0 +1,2 @@
+artifact_dest: /apps/tomcat-8.5.39/webapps/
+artifact_filename: devopschallenge.war

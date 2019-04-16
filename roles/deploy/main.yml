@@ -1,0 +1,13 @@
+  user: tomcat
+  pre_tasks:
+    - include_vars: variables.yml
+  tasks:
+    - name: Make temp dir
+      shell: "mkdir -p {{ artifact_dest }}"
+      copy:
+        src: "{{ artifact_filename }}"
+        dest: "{{ artifact_dest }}/."
+      shell: "ls {{ artifact_dest }}"
+      tags:
+        - deploy
+		  
